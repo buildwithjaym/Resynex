@@ -157,7 +157,7 @@ function applyTimelineUI() {
         if (statusNow) statusNow.textContent = u.now;
         if (statusSmall) statusSmall.textContent = backendDone ? "Report is ready. Waiting to open…" : u.sub;
 
-        setProgress(u.pct, `${u.badge}…`, backendDone ? "Report is ready. Finishing timeline…" : u.sub);
+        setProgress(u.pct, `${u.badge}…`, backendDone ? "Report is finalizing. Please wait..." : u.sub);
         applySteps(u.step);
 
         requestAnimationFrame(applyTimelineUI);
